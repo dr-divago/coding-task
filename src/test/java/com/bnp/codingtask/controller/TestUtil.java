@@ -32,7 +32,6 @@ public class TestUtil {
                 .firstName("Test")
                 .lastName("Test")
                 .email("test@test.com")
-                .phoneNumber("333555777")
                 .birthDate(LocalDate.of(1990, 1, 1))
                 .build();
     }
