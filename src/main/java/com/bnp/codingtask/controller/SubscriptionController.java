@@ -1,9 +1,9 @@
-package com.matteo.coding.task.codingtask.controller;
+package com.bnp.codingtask.controller;
 
-import com.matteo.coding.task.codingtask.entity.Quotation;
-import com.matteo.coding.task.codingtask.entity.Subscription;
-import com.matteo.coding.task.codingtask.repository.QuotationRepository;
-import com.matteo.coding.task.codingtask.repository.SubscriptionRepository;
+import com.bnp.codingtask.entity.Subscription;
+import com.bnp.codingtask.entity.Quotation;
+import com.bnp.codingtask.repository.QuotationRepository;
+import com.bnp.codingtask.repository.SubscriptionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

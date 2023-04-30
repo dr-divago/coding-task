@@ -1,12 +1,17 @@
-package com.matteo.coding.task.codingtask.entity;
+package com.bnp.codingtask.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Subscription {
 
     @Id

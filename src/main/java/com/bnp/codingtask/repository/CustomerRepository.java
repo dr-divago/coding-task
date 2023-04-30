@@ -1,6 +1,6 @@
-package com.matteo.coding.task.codingtask.repository;
+package com.bnp.codingtask.repository;
 
-import com.matteo.coding.task.codingtask.entity.Customer;
+import com.bnp.codingtask.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

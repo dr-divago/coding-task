@@ -1,7 +1,7 @@
-package com.matteo.coding.task.codingtask.controller;
+package com.bnp.codingtask.controller;
 
-import com.matteo.coding.task.codingtask.entity.Customer;
-import com.matteo.coding.task.codingtask.repository.CustomerRepository;
+import com.bnp.codingtask.entity.Customer;
+import com.bnp.codingtask.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,15 +17,9 @@ public class CustomerController {
         Customer customer = customerRepository.findById(id).orElseThrow();
         customer.setFirstName(updatedCustomer.getFirstName());
         customer.setLastName(updatedCustomer.getLastName());
-        customer.setMiddleName(updatedCustomer.getMiddleName());
         customer.setEmail(updatedCustomer.getEmail());
         customer.setPhoneNumber(updatedCustomer.getPhoneNumber());
         customer.setBirthDate(updatedCustomer.getBirthDate());
         return customerRepository.save(customer);
-    }
-
-    @PostMapping("/create")
-    public Customer createCustomer(@RequestBody Customer newCustomer) {
-        return customerRepository.save(newCustomer);
     }
 }

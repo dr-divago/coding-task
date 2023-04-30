@@ -1,4 +1,4 @@
-package com.matteo.coding.task.codingtask;
+package com.bnp.codingtask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
